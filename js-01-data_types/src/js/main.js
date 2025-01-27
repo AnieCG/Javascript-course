@@ -94,5 +94,16 @@ console.log( `Resultado de myBigInt + 4n: ${ myBigInt + 4n }`);
 console.log( `Resultado de myBigInt + 5n: ${ myBigInt + 5n }`);
 console.log( `Resultado de myBigInt + 6n: ${ myBigInt + 6n }`);
 
+myAge = null; // intensionalmente se borra el tipo de dato
+  // NO es correcto usar typeof con un dato null
+ console.log(`Tipo de dato en myAge: ${typeof myAge }`); // object
+ console.log(`myAge es null?  ${ myAge === null } `);// true
+  /*
+ Tipo de dato boolean
+ Tiene dos estados: true y false
+ */
+ const isActive = true;
+ console.log( typeof isActive ); // boolean
+
 
 
