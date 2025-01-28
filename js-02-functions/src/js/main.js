@@ -30,3 +30,45 @@ console.log(saludar ("serch"));
 console.log(saludar ("Ana"));
 console.log(saludar ("Jorge"));
 
+
+
+
+
+
+
+// Realizar función declarada
+
+function suma (numero1, numero2) {
+let resultado = numero1 + numero2
+
+return resultado
+}
+
+console.log (suma (2, 3));
+console.log (suma (9, 10));
+console.log (suma (6, 8));
+
+//Cambia la función anterior declarada a una expresada----Se podría quitar el nombre "suma" de la función (ser una función anónima) porque ya está dentro del nombre de una variable.
+
+const sumarDosNumeros = function suma (numero1, numero2) {
+    let resultado = numero1 + numero2
+    
+    return resultado
+    }
+
+console.log (sumarDosNumeros (2,3));
+
+
+// Ejemplo de usos de funciones expresadas
+let hora = 10;
+let saludarDependiendoHora;
+if(hora < 12){
+    saludarDependiendoHora = function(){
+        return "Buenos días";
+    };
+} else {
+    saludarDependiendoHora = function(){
+        return "Buenas tardes";
+    };
+}
+saludarDependiendoHora();
