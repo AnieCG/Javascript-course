@@ -114,3 +114,20 @@ return area
 
 console.log (areaRectangulo (3,5));
 console.log (areaRectangulo (8,20));
+
+
+//Convertir la función anterior a una función expresada
+
+const areaDeRectangulo = function (base, altura){
+    let area = base * altura;
+    
+    return area;
+}
+
+    console.log (areaDeRectangulo (3,5));
+
+// Convertir a Arrow function
+
+const areaDeElRectangulo = (base, altura) => base*altura;
+
+console.log (`El área del rectangulo es: ${areaDeElRectangulo(6,10)} cm^2`);
