@@ -72,3 +72,45 @@ if(hora < 12){
     };
 }
 saludarDependiendoHora();
+
+
+/*
+-----------Funciones autoinvocadas---------------
+(selft-invoking functions)
+Funciones que se autoincovan, se pueden defiinir con funciones anónimas.
+
+sintaxis: (function (parámetros) {}) (argumentos);
+*/
+
+(function setUp (name){
+    console.log (`Hola ${name}, soy una función autoinvocada`);
+}) (`Erik`);
+
+/* 
+--------------Arrow Function------------------(Si la función solo tien UN parámetro se pueden quitar los paréntesis de parámetros)
+Funciones similares a las funciones expresadas pero:
+-No requiere la palabra reservada function.
+-Si tiene una sola instrucción no requiere las llaves {}.
+-Si la instrucción es el mismo retorno, no requiere la palabra return.
+
+sintaxis:
+const nombreVariable = (parametros) => instrucción;
+
+const nombreVariable = (parámetros) => {
+    instrucción;
+    return expresión;
+    }
+
+*/
+
+//Realizar una función declarada que calcule el área de un rectangulo
+
+function areaRectangulo(base, altura){
+let area = base * altura;
+
+return area
+
+}
+
+console.log (areaRectangulo (3,5));
+console.log (areaRectangulo (8,20));
