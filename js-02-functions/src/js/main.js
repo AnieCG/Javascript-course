@@ -220,5 +220,10 @@ mensajeImpreso ("Hola", "consola");
 mensajeImpreso ("Hola", "alert");
 mensajeImpreso ("Hola" , "titulo");
 
+// Usar función de callback del ejercicio anterior
 
+const imprimirMensajeConCallback = (mensaje, callback) => callback (mensaje);
+
+imprimirMensajeConCallback ("Hola Erick", mensajeConsola);
+imprimirMensajeConCallback ("Hola Erick", mensajeAlert);
 
