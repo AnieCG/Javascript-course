@@ -201,3 +201,51 @@ console.log (velocidadVenti(1));
 console.log (velocidadVenti(2));
 console.log (velocidadVenti(3));
 console.log (velocidadVenti(8));
+
+
+// ------------------------ Operador ternario --------------------------
+/*
+ Es el único operador de JavaScript que tiene 3 operandos.
+ Generalmente se utiliza como opción a la sentencia if-else.
+ Sintaxis:
+  condición ? expresiónSiCondiciónEsVerdadera : expresionSiCondiciónEsFalsa; 
+*/
+
+const pagoTarjetaCredito = true;
+let msj;
+if ( pagoTarjetaCredito ){
+    msj = "A realizado el pago de su TC";
+}else {
+    msj = "No ha realizado el pago de su TC";
+}
+
+
+// con operador ternario
+const verificarEdad = (edad) => edad >= 18 ? "Eres mayor de edad" : "Eres menor de edad";
+
+console.log(verificarEdad(18));
+console.log(verificarEdad(17));;
+
+
+//con if else
+const evalurEdadConIfElse = (edad) => {
+    if ( edad >= 18 ){
+        return "Eres mayor de edad";
+    }else {
+        return "Eres menor de edad";
+    }
+}
+console.log( evalurEdadConIfElse(20) ); // Eres mayor de edad
+
+
+
+// ------------------- Ejercicio Estaciones del año --------------------------
+/*
+ Preguntar por el número de mes (prompt o DOM), del 1 al 12
+ Desplegar de acuerdo al mes un Alert (mostrarlo en el DOM) la estación del año.
+ mes 12,  1,  2 = invierno.
+ mes  3,  4,  5 = primavera
+ mes  6,  7,  8 = verano
+ mes  9, 10, 11 = otoño 
+ Realizar una versión con if-else-elseif y otra con switch.
+*/
