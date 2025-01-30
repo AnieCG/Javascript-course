@@ -249,3 +249,55 @@ console.log( evalurEdadConIfElse(20) ); // Eres mayor de edad
  mes  9, 10, 11 = otoño 
  Realizar una versión con if-else-elseif y otra con switch.
 */
+
+/**let mes = Number(prompt("Ingresa un número de mes (1 al 12):"));
+let estacion; 
+
+switch ( mes ){
+    case 12:
+    case 1:
+    case 2:
+        estacion = `Invierno`;
+        break;
+
+    case 3:
+    case 4:
+    case 5:
+        estacion = `Primavera`;
+        break;
+    case 6:
+    case 7:
+    case 8:
+        estacion = `Verano`;
+        break;
+    case 9:
+    case 10:
+    case 11:
+        estacion = `Otoño`;
+        break;
+
+}
+document.getElementById("title").innerText = estacion;
+*/
+
+
+
+
+
+
+let mes = Number(prompt("Ingresa un número de mes (1 al 12):"));
+
+if (mes === 12 || mes === 1 || mes === 2 ){
+    estacion = `Invierno`;
+    } else if ( mes === 3 || mes === 4 || mes === 5 ){
+        estacion = `Primavera`;
+    } else if ( mes === 6 || mes === 7 || mes === 8 ){
+        estacion = `Verano`;
+    } else if ( mes === 9 || mes === 10 || mes === 11 ){
+        estacion = `Otoño`;
+    } else {
+        estacion = `Error`
+}
+
+
+document.getElementById("title").innerText = estacion;
