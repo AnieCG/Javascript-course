@@ -278,14 +278,14 @@ switch ( mes ){
 
 }
 document.getElementById("title").innerText = estacion;
-*/
 
 
 
 
 
 
-let mes = Number(prompt("Ingresa un número de mes (1 al 12):"));
+
+/*let mes = Number(prompt("Ingresa un número de mes (1 al 12):"));
 
 if (mes === 12 || mes === 1 || mes === 2 ){
     estacion = `Invierno`;
