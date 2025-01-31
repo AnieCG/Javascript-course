@@ -167,3 +167,30 @@ for (let i = 1; i <= 7; i++ ){
         if( i >= 4 ) break multiplicando;
     }
 }
+
+
+// ============== Ciclo While ======================
+//                (while loop)
+/*
+ Crea un bucle que ejecuta una sentencia mientras la condición especificada
+ se cumpla.
+ Sintaxis:
+    while( condición) sentencia;
+    while ( condición ){
+        sentencias;
+    }
+*/
+while(  confirm("¿Quieres que te genere tu número de la suerte ")  ){
+    // ramdom devuelve un número aleatorio entre 0(incluido) y 1(excluido)
+    console.log(`Tu número de la suerte es ${ Math.random() } `); 
+    // Número aleatorio del 0 al 10(excluido)
+    console.log(`Tu número de la suerte es ${ Math.random() * 10 } `); 
+    // Número aleatorio del 1 al 11(excluido)           1 - 10.999999
+    console.log(`Tu número de la suerte es ${ (Math.random() * 10) + 1 } `); 
+    // Número aleatorio entero del 1 al 10(incluido)         
+    alert(`Tu número de la suerte es ${ Math.floor ((Math.random() * 10) + 1) } `); 
+}
+
+
+// Generar 100 número aleatorios del 1 al 50 
+// ordenar e imprimir de manera descente
