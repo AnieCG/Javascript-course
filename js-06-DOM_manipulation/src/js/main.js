@@ -124,4 +124,5 @@ refBtnSuccess.addEventListener ( "mouseover", ( ) => {
     refBtnSecondary.style.visibility = "visible"; 
 } );
 
+ console.log (typeof (null));
 
