@@ -9,13 +9,14 @@ insertMainFooter();
 /**
  * Lee nuestro archivo JSON para avanzar en nuestro desarrollo del frontend
  */
-getProducts("/public/json/gaming-products.json");
+const page = 2;
+getProducts(`/public/json/gaming-products-page${page}.json`);
 
 /**
  * En la semana 12, al tener lista nuestra API en SpringBoot 
  * Se usaría la URL que se genere en el despliegue de nuestra API
  */
-// getProducts("https://fakestoreapi.com/products");
+//getProducts("https://fakestoreapi.com/products");
 
 
 

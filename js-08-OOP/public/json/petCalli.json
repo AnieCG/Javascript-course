@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1324,
+        "nombre": "Juan",
+        "Apellido": "Hernández",
+        "fechaIngreso": "12Jul23",
+        "areasDeTrabajo": [
+            "productos, ventas, servicios"
+        ]
+    },
+    {
+        "id": 1630,
+        "nombre": "Arely",
+        "Apellido": "Guzmán",
+        "fechaIngreso": "08Ago20",
+        "areasDeTrabajo": [
+            "marketing, finanzas, atención al clientes"
+        ]
+    },
+    {
+        "id": 1087,
+        "nombre": "Ernesto",
+        "Apellido": "Aguilar",
+        "fechaIngreso": "17Febrero24",
+        "areasDeTrabajo": [
+            "IT, marketing, servicios"
+        ]
+    }
+]

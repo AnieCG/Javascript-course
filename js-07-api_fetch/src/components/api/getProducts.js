@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1d9114ae565f4e3e34bddce058f973af0ee58a1
 /*
  API: Application Programming Interface
    Permite la comunicación entre dos aplicaciones de software
@@ -24,6 +28,7 @@
 */
 
 const getProducts = ( url ) =>{
+<<<<<<< HEAD
   // Manejo de promesas con .then() y .catch()
   /*
   fetch( resource )
@@ -36,6 +41,20 @@ const getProducts = ( url ) =>{
      .then( (productos) => console.log( productos ) )      
    .catch( (error)=> console.log(error)  )
    .finally( ()=>console.log("He terminado") ) 
+=======
+   // Manejo de promesas con .then() y .catch()
+   /*
+   fetch( resource )
+    .then( callback ) // Se ejecuta el callback cuando la promesa sea resuelta
+    .catch( callback ) // Se ejecuta el callback cuando la promesa sea rechazada
+    .finally( callback ) // Se ejecuta el callback independiente de que se resuelta o rechazada
+   */
+    fetch( url )
+    .then( (resolve)=> resolve.json() )
+      .then( (productos) => console.log( productos ) )      
+    .catch( (error)=> console.log(error)  )
+    .finally( ()=>console.log("He terminado") ) 
+>>>>>>> d1d9114ae565f4e3e34bddce058f973af0ee58a1
 
 };
 

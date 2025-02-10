@@ -4,6 +4,7 @@
  * @param {object} userData datos del usuario
  */
 const userCard = ( userData ) =>{
+<<<<<<< HEAD
     const card = `
      <div class="col-sm-6 col-md-4 col-lg-3 p-3">
          <div class="card" >
@@ -26,3 +27,27 @@ const userCard = ( userData ) =>{
  
  // exportación por defaul. Solo se puede exportar un solo elemento
  export default userCard;
+=======
+   const card = `
+    <div class="col-sm-6 col-md-4 col-lg-3 p-3">
+        <div class="card" >
+            <figure>
+                <img src="${userData.avatar}" class="card-img-top" alt="..." >
+            </figure>
+            <div class="card-body">
+                <h5 class="card-title">${userData.first_name} ${userData.last_name}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+   `;
+    return card;
+};
+
+// exportación nombrada
+// export { userCard };
+
+// exportación por defaul. Solo se puede exportar un solo elemento
+export default userCard;
+>>>>>>> d1d9114ae565f4e3e34bddce058f973af0ee58a1
